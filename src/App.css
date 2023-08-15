@@ -1,0 +1,182 @@
+.App{
+  background-color: #FFFFFF;
+}
+.photogenic {
+  font-family: poppins ;
+  margin-left: 20px;
+  padding-top: 20px;
+  font-weight: 1200;
+  font-size: x-large;
+}
+
+.photo {
+  font-family: Tahoma;
+  text-shadow: 0 0 10px black;
+  margin-right: 0%;
+  font-weight: 100;
+}
+.sideBar{
+  background-color: whitesmoke;
+  width: 190px;
+  min-height: 1100px;
+
+ 
+  padding-right: 15px;
+ border-radius: 5px;
+}
+#icon {
+  margin-right: 7px;
+}
+#category {
+   width: 900px;
+   padding-top: 20px;
+   padding-left: 14px;
+  text-decoration: underline;
+  font-weight: 900;
+  
+}
+.home {
+  padding-top: 19px ;
+  
+  padding-left: 25px;
+  display: flex;
+  gap: 4px;
+}
+.Home {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 990px;
+  left: 240px;
+  max-height: 300px;
+  background-color: whitesmoke;
+  max-width: 1990px;
+ 
+}
+.Home:hover {
+  transform: scale(1.05);
+}
+
+.Home > img {
+  width: 100%;
+  max-height: 48vh; 
+  object-fit: cover; 
+  border-top-left-radius: 70px;
+}
+.Home > p {
+  font-family: poppins;
+  font-style: italic;
+  font-weight: 900;
+  color: green;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-size: large;
+}
+/* .searchBar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 990px;
+  left: 30px;
+}
+#search {
+  min-width: 1400px;
+  min-height: 30px;
+  border-radius: 7px;
+} */
+#signIn{
+ display: flex;
+ gap: 30px;
+ position: fixed;
+ left: 1600px;
+ top: 37px;
+ cursor: pointer;
+ 
+}
+#font {
+  position: relative;
+  left: 20px;
+
+}
+
+
+.flex > div{
+ padding-top: 15px;
+ padding-left: 7px;
+ font-size: larger;
+ font-family: poppins;
+ font-weight: 500;
+ min-width: 400px;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  padding: 9px;
+  border-radius: 9px;
+  position: fixed;
+  top: 40px; /* Adjust this value as needed */
+  left: 310px;
+  min-width: 1200px;
+  background-color: white; /* Set the background color as needed */
+  /* z-index: 1000; Ensure it's above other content */
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  padding: 4px;
+  margin-left: 8px;
+}
+/* FetchApi.css */
+/* 
+/* App.css */
+/* Your CSS code */
+
+.display-photos {
+  max-width: 1420px;
+  margin-left: 250px;
+  position: absolute;
+  top: 115px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 12px;
+}
+
+.photo-card {
+  position: relative; /* Important for containing absolute positioned elements */
+}
+
+.image-container {
+  position: relative; /* Establish positioning context */
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.user-name-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo-card:hover .user-name-overlay {
+  opacity: 1;
+}
+
+
